@@ -1,0 +1,63 @@
+<!-- juego.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Juego del Ahorcado</h1>
+    <div id="contenedorJuego">
+        <div id="dibujoAhorcado">
+            <p>Intentos restantes: <span id="intentosRestantes">6</span></p>
+            <div id="ahorcado"> <!-- estos <div> son necesarios para que sea visible las partes del ahorcado (orca y muñequito)  -->
+                <div class="parteAhorcado" id="base"></div>
+                <div class="parteAhorcado" id="poste"></div>
+                <div class="parteAhorcado" id="viga"></div>
+                <div class="parteAhorcado" id="cuerda"></div>
+                <div class="parteAhorcado" id="cabeza"></div>
+                <div class="parteAhorcado" id="cuerpo"></div>
+                <div class="parteAhorcado" id="brazoIzquierdo"></div>
+                <div class="parteAhorcado" id="brazoDerecho"></div>
+                <div class="parteAhorcado" id="piernaIzquierda"></div>
+                <div class="parteAhorcado" id="piernaDerecha"></div>
+            </div>
+        </div>
+        <div id="contenedorPalabra">
+            <!-- sirve para mostrar las letras adivinadas-->
+        </div>
+        <div id="contenedorEntrada">
+            <label for="letraAdivinada">Ingresa una letra:</label>
+            <input type="text" id="letraAdivinada" maxlength="1">
+            <button onclick="adivinar()">Adivinar</button>
+        </div>
+        <div id="letrasIncorrectas">
+            <p>Letras incorrectas:</p>
+            <ul id="listaLetrasIncorrectas">
+                <!-- sirve para mostrar las letras incorrectas -->
+            </ul>
+        </div>
+        <button onclick="reiniciarJuego()">Volver a empezar</button>
+    </div>
+    <div id="tablaPuntuaciones">
+        <h2>Tabla de puntuaciones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Puntos</th>
+                    <th>Tiempo</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaPuntuaciones">
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* estilos.css */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fc84a2;
+}
+
+/* Contenedor del juego */
+#contenedorJuego {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* dibujo del ahorcado */
+#dibujoAhorcado {
+    margin-bottom: 20px;
+}
+
+#ahorcado {
+    position: relative;
+    height: 200px;
+}
+
+.parteAhorcado {
+    display: none;
+    position: absolute;
+}
+
+#base {
+    width: 100px;
+    height: 10px;
+    background-color: #000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    border-radius: 5px;
+}
+
+#poste {
+    width: 10px;
+    height: 150px;
+    background-color: #000;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    border-radius: 5px;
+}
+
+#viga {
+    width: 75px;
+    height: 10px;
+    background-color: #000;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-100%);
+    display: block;
+    border-radius: 5px;
+}
+
+#cuerda {
+    width: 10px;
+    height: 20px;
+    background-color: #000;
+    bottom: 150px;
+    left: 12.5%;
+    display: block;
+    border-radius: 5px;
+}
+/*dibujo del muñequito*/
+#cabeza {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    bottom: 120px;
+    left: 6.5%;
+}
+
+#cuerpo {
+    width: 10px;
+    height: 50px;
+    background-color: #000;
+    bottom: 90px;
+    left: 11.5%;
+    border-radius: 5px;
+}
+
+#brazoIzquierdo {
+    width: 30px;
+    height: 10px;
+    background-color: #000;
+    bottom: 110px;
+    left: 11.5%;
+    transform: rotate(-45deg);
+    transform-origin: left center;
+    border-radius: 5px;
+}
+
+#brazoDerecho {
+    width: 30px;
+    height: 10px;
+    background-color: #000;
+    bottom: 110px;
+    left: 11.5%;
+    transform: rotate(45deg);
+    transform-origin: right center;
+    border-radius: 5px;
+}
+
+#piernaIzquierda {
+    width: 30px;
+    height: 10px;
+    background-color: #000;
+    bottom: 50px;
+    left: 11.5%;
+    transform: rotate(45deg);
+    transform-origin: left center;
+    border-radius: 5px;
+}
+
+#piernaDerecha {
+    width: 30px;
+    height: 10px;
+    background-color: #000;
+    bottom: 50px;
+    left: 11.5%;
+    transform: rotate(-45deg);
+    transform-origin: right center;
+    border-radius: 5px;
+}
+
+/* Contenedor de la palabra */
+#contenedorPalabra {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de entrada */
+#contenedorEntrada {
+    margin-bottom: 20px;
+}
+
+#letraAdivinada {
+    padding: 5px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+}
+/*estilo de los botones*/
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffafd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffafd4;
+}
+
+/* Contenedor de letras incorrectas */
+#letrasIncorrectas {
+    margin-top: 20px;
+}
+
+#listaLetrasIncorrectas {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Tabla de puntuaciones */
+#tablaPuntuaciones {
+    margin-top: 30px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+/* Estilos para la página de bienvenida */
+form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+}
